@@ -787,7 +787,7 @@ Our goal is to make it easy for anyone — from developers to traders — to bui
 ### $PolyEmperion Token
 
 Native token launched on PumpFun (Solana)  
-**Contract Address:** `Launch Soon`
+**Contract Address:** `8LGZxNrRfQGUhmNt2fC1DoSNqzimD41hjJUjyDG9pump`
 
 ---
 
