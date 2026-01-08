@@ -27,7 +27,7 @@ import type { TradingConfig, PlaceOrderParams, Order } from "../types.js";
  * 
  * @example
  * ```typescript
- * const sdk = new PolyEmperionSDK({
+ * const sdk = new POLYNOCTONSDK({
  *   trading: {
  *     chainId: 137,
  *     backend: { privateKey: "0x..." },
