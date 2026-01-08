@@ -1,5 +1,5 @@
 /**
- * Simple logger utility for the PolyEmperion SDK.
+ * Simple logger utility for the POLYNOCTON SDK.
  * Provides structured logging with debug mode support.
  */
 export interface Logger {
