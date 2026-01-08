@@ -1,5 +1,5 @@
 /**
- * Default configuration values for the PolyEmperion SDK.
+ * Default configuration values for the POLYNOCTON SDK.
  */
 export const DEFAULTS = {
   /** Default API base URL for Polymarket CLOB */
