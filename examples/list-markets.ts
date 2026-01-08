@@ -1,7 +1,7 @@
-import { PolyEmperionSDK } from "../src/client.js";
+import { POLYNOCTONSDK } from "../src/client.js";
 
 async function main() {
-  const sdk = new PolyEmperionSDK({ debug: true });
+  const sdk = new POLYNOCTONSDK({ debug: true });
   const markets = await sdk.getMarkets();
   console.log("Total markets:", markets.length);
   console.log("First market:", markets[0]);
