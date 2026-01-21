@@ -1,13 +1,13 @@
 /**
- * Base error class for all POLYNOCTON SDK errors.
+ * Base error class for all POLYCAVORA SDK errors.
  */
-export class POLYNOCTONError extends Error {
+export class POLYCAVORAError extends Error {
   code?: string;
   cause?: unknown;
   
   constructor(message: string, code?: string, cause?: unknown) {
     super(message);
-    this.name = "POLYNOCTONError";
+    this.name = "POLYCAVORAError";
     this.code = code;
     this.cause = cause;
   }
@@ -16,7 +16,7 @@ export class POLYNOCTONError extends Error {
 /**
  * Error thrown when an HTTP request fails.
  */
-export class HttpError extends POLYNOCTONError {
+export class HttpError extends POLYCAVORAError {
   status: number;
   
   constructor(status: number, message: string, cause?: unknown) {
