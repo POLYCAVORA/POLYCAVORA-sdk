@@ -1,5 +1,5 @@
 /**
- * Trading Example - How to use POLYNOCTON SDK for trading on Polymarket
+ * Trading Example - How to use POLYCAVORA SDK for trading on Polymarket
  * 
  * This example shows how to:
  * 1. Initialize the SDK with trading configuration
@@ -15,7 +15,7 @@
  * - Set your private key in the PRIVATE_KEY environment variable
  */
 
-import { POLYNOCTONSDK } from "../src/client.js";
+import { POLYCAVORASDK } from "../src/client.js";
 
 async function main() {
   // Get your private key from environment variable
@@ -30,10 +30,10 @@ async function main() {
     process.exit(1);
   }
 
-  console.log("=== POLYNOCTON SDK Trading Example ===\n");
+  console.log("=== POLYCAVORA SDK Trading Example ===\n");
 
   // Initialize SDK with trading configuration
-  const sdk = new POLYNOCTONSDK({
+  const sdk = new POLYCAVORASDK({
     debug: true,
     trading: {
       chainId: 137, // Polygon mainnet
