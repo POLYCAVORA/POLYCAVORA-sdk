@@ -1,4 +1,4 @@
-# 🚀 Quick Start - POLYNOCTON SDK v0.2.0
+# 🚀 Quick Start - POLYCAVORA SDK v0.2.0
 
 Welcome! This SDK is now **ready to use** for building Polymarket trading applications!
 
@@ -19,7 +19,7 @@ Welcome! This SDK is now **ready to use** for building Polymarket trading applic
 ### Step 1: Install the SDK
 
 ```bash
-npm install @POLYNOCTON/sdk
+npm install @POLYCAVORA/sdk
 ```
 
 ### Step 2: Choose Your Use Case
@@ -27,9 +27,9 @@ npm install @POLYNOCTON/sdk
 #### Option A: Data Only (No Trading)
 
 ```typescript
-import { POLYNOCTONSDK } from "@POLYNOCTON/sdk";
+import { POLYCAVORASDK } from "@POLYCAVORA/sdk";
 
-const sdk = new POLYNOCTONSDK();
+const sdk = new POLYCAVORASDK();
 
 // Fetch markets
 const markets = await sdk.getMarkets();
@@ -43,9 +43,9 @@ console.log(market.question);
 #### Option B: Trading (Backend/Bot)
 
 ```typescript
-import { POLYNOCTONSDK } from "@POLYNOCTON/sdk";
+import { POLYCAVORASDK } from "@POLYCAVORA/sdk";
 
-const sdk = new POLYNOCTONSDK({
+const sdk = new POLYCAVORASDK({
   trading: {
     chainId: 137, // Polygon mainnet
     backend: {
@@ -78,7 +78,7 @@ await trading.cancelOrder(order.orderId);
 #### Option C: Trading (Frontend/Web App)
 
 ```typescript
-import { POLYNOCTONSDK } from "@POLYNOCTON/sdk";
+import { POLYCAVORASDK } from "@POLYCAVORA/sdk";
 import { ethers } from "ethers";
 
 // Connect to user's wallet
@@ -87,7 +87,7 @@ await provider.send("eth_requestAccounts", []);
 const signer = provider.getSigner();
 
 // Initialize SDK
-const sdk = new POLYNOCTONSDK({
+const sdk = new POLYCAVORASDK({
   trading: {
     chainId: 137,
     frontend: {
@@ -195,7 +195,7 @@ Polymarket is on Polygon mainnet. Start with small amounts to test!
 npm run examples:list
 
 # 2. Stream live orderbook (set market ID)
-POLYNOCTON_MARKET_ID=<market-id> npm run examples:orderbook
+POLYCAVORA_MARKET_ID=<market-id> npm run examples:orderbook
 
 # 3. Trading example (set your private key)
 PRIVATE_KEY=0x... npm run examples:trading
@@ -230,15 +230,15 @@ PRIVATE_KEY=0x... npm run examples:trading
 - **Examples**: [examples/](./examples/)
 
 ### Community
-- **GitHub Issues**: https://github.com/POLYNOCTON/POLYNOCTON-sdk/issues
-- **X (Twitter)**: [@POLYNOCTON](https://x.com/polynoctonxyz)
-- **Website**: [POLYNOCTON.xyz](https://polynocton.xyz)
+- **GitHub Issues**: https://github.com/POLYCAVORA/POLYCAVORA-sdk/issues
+- **X (Twitter)**: [@POLYCAVORA](https://x.com/POLYCAVORAxyz)
+- **Website**: [POLYCAVORA.xyz](https://POLYCAVORA.xyz)
 
 ---
 
 ## ✅ Checklist Before You Start Trading
 
-- [ ] SDK installed: `npm install @POLYNOCTON/sdk`
+- [ ] SDK installed: `npm install @POLYCAVORA/sdk`
 - [ ] Private key saved in `.env` file
 - [ ] `.env` is in `.gitignore` (already done ✓)
 - [ ] USDC in your Polygon wallet
