@@ -1,5 +1,5 @@
 /**
- * Simple logger utility for the POLYNOCTON SDK.
+ * Simple logger utility for the POLYCAVORA SDK.
  * Provides structured logging with debug mode support.
  */
 export interface Logger {
